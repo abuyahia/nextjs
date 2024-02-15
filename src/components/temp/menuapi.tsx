@@ -1,6 +1,6 @@
 export default async function MenuApi(){
 
-  const response = await fetch('http://kku.aaa:81/ar/system/menu/main/linkset');
+  const response = await fetch('http://kku.edu.sa/ar/system/menu/main/linkset');
   const getMenu = await response.json();
   const listMenu = getMenu.linkset[0];
   const allMenu = { ...listMenu }

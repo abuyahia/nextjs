@@ -3,7 +3,7 @@ import { Suspense } from 'react'
 import Link from "next/link";
 export default async function newsList(){
 
-    const response = await fetch("http://kku.aaa:81/ar/api/v1/news", {
+    const response = await fetch("http://kku.edu.sa/ar/api/v1/news", {
         next:{ revalidate: 20 },
         
     });

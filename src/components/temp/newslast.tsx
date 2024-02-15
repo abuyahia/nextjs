@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 export default async function NewsLast() {
-  const response = await fetch("http://kku.aaa:81/ar/api/v1/news-last", {
+  const response = await fetch("http://kku.edu.sa/ar/api/v1/news-last", {
     next: { revalidate: 40 * 1000  },
   });
   const getNews = await response.json();

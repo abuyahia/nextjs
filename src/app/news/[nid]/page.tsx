@@ -4,7 +4,7 @@ import PostTemplate from '../../../components/post/PostTemplate';
 
 export default async function newsPost(postID: any){
         
-        const response = await fetch(`http://kku.aaa:81/ar/api/v1/news/${postID.params.nid}`);
+        const response = await fetch(`http://kku.edu.sa/ar/api/v1/news/${postID.params.nid}`);
         const posts = await  response.json();
 
 
